@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Beyond Orbit</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo"><a href="index.html">Beyond Orbit</a></div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links" id="navLinks">
+      <li class="nav-item">
+        <a href="#">Planets</a>
+        <div class="dropdown">
+          <a href="mercury.html">Mercury</a>
+          <a href="venus.html">Venus</a>
+          <a href="earth.html">Earth</a>
+          <a href="mars.html">Mars</a>
+          <a href="jupiter.html">Jupiter</a>
+          <a href="saturn.html">Saturn</a>
+          <a href="uranus.html">Uranus</a>
+          <a href="neptune.html">Neptune</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a href="#">Galaxies</a>
+        <div class="dropdown">
+          <a href="milkyway.html">Milky Way</a>
+          <a href="andromeda.html">Andromeda</a>
+        </div>
+      </li>
+      <li class="nav-item"><a href="solarsystem.html">Solar System</a></li>
+      <li class="nav-item"><a href="moons.html">Moons</a></li>
+      <li class="nav-item"><a href="stars_constellations.html">Stars & Constellations</a></li>
+      <li class="nav-item"><a href="universe.html">Universe</a></li>
+      <li class="nav-item"><a href="space_missions.html">Space Missions</a></li>
+      <li class="nav-item"><a href="scientists.html">Scientists</a></li>
+      <li class="nav-item"><a href="fun_facts.html">Fun Facts</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Welcome to Beyond Orbit</h1>
+    <p>Explore the wonders of space, from shimmering stars to far-off galaxies.</p>
+  </header>
+
+  <div class="quote">“Somewhere, something incredible is waiting to be known.” — Carl Sagan</div>
+
+  <section class="planets-section">
+    <div class="planet"><a href="mercury.html"><img src="image/mecury.jpg" alt="Mercury" /></a><p>Mercury</p></div>
+    <div class="planet"><a href="venus.html"><img src="image/venus.jpg" alt="Venus" /></a><p>Venus</p></div>
+    <div class="planet"><a href="earth.html"><img src="image/earth.jpg" alt="Earth" /></a><p>Earth</p></div>
+    <div class="planet"><a href="mars.html"><img src="image/mars.jpg" alt="Mars" /></a><p>Mars</p></div>
+    <div class="planet"><a href="jupiter.html"><img src="image/jupiter.jpg" alt="Jupiter" /></a><p>Jupiter</p></div>
+    <div class="planet"><a href="saturn.html"><img src="image/saturn.jpg" alt="Saturn" /></a><p>Saturn</p></div>
+    <div class="planet"><a href="uranus.html"><img src="image/uranus.webp" alt="Uranus" /></a><p>Uranus</p></div>
+    <div class="planet"><a href="neptune.html"><img src="image/neptune2.jpg" alt="Neptune" /></a><p>Neptune</p></div>
+  </section>
+    <footer>
+    &copy; 2025 Beyond Orbit — Journey through the cosmos begins here.
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("navLinks");
+      nav.classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
